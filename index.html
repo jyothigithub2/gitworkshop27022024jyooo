@@ -1,0 +1,29 @@
+<html>
+<title>
+my example1
+</title>
+<body>
+<label>Name:</label> <input id="name"></input><br>
+<label>Gender:</label> <input id="gender"/>
+<input type="submit" onclick="show()"/>
+
+<script>
+function show() {
+ var name = document.getElementById("name").value;
+ var gender = document.getElementById("gender").value;
+ var message =' ';
+ if (gender==='male') {
+      message ='hello Mr.  '+name;
+}else if(gender==='female')
+{
+       message='Hello Miss.  '+name;
+}
+else{
+    message='Hello  '+name;
+}
+console.log(name);
+alert('Hello');
+}
+</script>
+</body>
+</html>
